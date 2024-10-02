@@ -255,12 +255,11 @@ footer p {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajusta el ancho máximo del carrusel */
-    height: 400px; /* Establece una altura fija para las imágenes */
+    max-width: 1080px; /* Ajusta el ancho máximo del carrusel */
+    height: 720px; /* Establece una altura fija para las imágenes */
     margin: auto;
     overflow: hidden;
 }
-
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
