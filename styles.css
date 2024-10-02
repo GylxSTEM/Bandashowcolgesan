@@ -255,8 +255,8 @@ footer p {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 1080px; /* Ajusta el ancho máximo del carrusel */
-    height: 720px; /* Establece una altura fija para las imágenes */
+    max-width: 810px; /* Ajusta el ancho máximo del carrusel */
+    height: 540px; /* Establece una altura fija para las imágenes */
     margin: auto;
     overflow: hidden;
 }
