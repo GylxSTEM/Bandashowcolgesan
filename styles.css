@@ -1,0 +1,378 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* Hacemos la barra semitransparente */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo para el ícono de "Portafolio" en la barra de navegación */
+.navbar a i {
+    margin-right: 8px;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #3f0a0a;
+}
+
+/* Ajustes para evitar que el contenido se oculte detrás de la barra */
+header, section, footer {
+    padding-top: 60px; /* Ajuste por la barra de navegación fija */
+}
+
+/* Video de fondo */
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Colocar el video detrás del contenido */
+}
+
+.inicio .contenido {
+    position: relative;
+    z-index: 1; /* Aseguramos que el contenido esté por encima del video */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Estilos para el slider */
+.slider {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.slider img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    animation: slide 10s infinite;
+    transition: transform 0.3s ease;
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slide {
+    0% {opacity: 1;}
+    33% {opacity: 0;}
+    66% {opacity: 1;}
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mision-vision .globo {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid gold;
+    color: white;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Sección Historia y Reconocimientos */
+.historia-reconocimientos {
+    background-color: #111;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.historia-reconocimientos h2, .historia-reconocimientos h3 {
+    color: gold;
+}
+
+.historia-reconocimientos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.historia-reconocimientos li {
+    margin-bottom: 10px;
+}
+
+/* Sección Directivos */
+.directivos {
+    background-color: #111;
+    padding: 40px;
+    text-align: center;
+}
+
+.directivos .directora, .directivos .instructores {
+    margin: 20px 0;
+}
+
+.directivos img {
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid gold;
+}
+
+/* Galería */
+.galeria {
+    background-color: #222;
+    padding: 40px;
+    text-align: center;
+}
+
+.galeria h2 {
+    color: gold;
+}
+
+.galeria .imagenes img {
+    width: 30%;
+    margin: 5px;
+    transition: transform 0.3s;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.galeria .imagenes img:hover {
+    transform: scale(1.1);
+}
+
+/* Videos */
+.videos iframe {
+    width: 45%;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    color: gold;
+}
+
+/* Sección de creadores */
+.creadores {
+    margin-bottom: 20px;
+}
+
+.creadores h3 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.estudiantes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.estudiante {
+    text-align: center;
+}
+
+.estudiante img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    border: 3px solid gold;
+    object-fit: cover; /* Para asegurarse de que la imagen siempre encaje dentro del círculo */
+}
+
+.estudiante h4 {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Estilo del texto del pie de página */
+footer p {
+    color: gray;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta el ancho máximo del carrusel */
+    height: 400px; /* Establece una altura fija para las imágenes */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Asegura que las imágenes se adapten a la altura del contenedor */
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se escale y corte sin distorsión */
+    flex: 0 0 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Estilos para los globos */
+.globo {
+    background-color: rgba(65, 52, 52, 0.274);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes específicos para la historia */
+.globo.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%; /* Puedes ajustar el ancho */
+}
+
+.globo.historia img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+}
+
+.globo.historia p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.imagen-grande {
+    width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #2222228f;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: gold; /* Color al pasar el cursor sobre el enlace */
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Estilo del ícono */
+.fas.fa-briefcase {
+    font-size: 18px;
+}
+.imagen-pequeña {
+    width: 150px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
+}
+
+.logos {
+    display: flex;
+    justify-content: center; /* Centra los logos en el pie de página */
+    margin-top: 10px; /* Espacio entre estudiantes y logos */
+}
+
+.logo {
+    margin: 0 10px; /* Espacio entre los logos */
+}
